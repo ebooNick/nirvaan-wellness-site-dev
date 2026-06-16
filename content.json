@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "siteTitle": "Nirvaan Wellness — Connect to Your Inner Self",
+    "description": "Nirvaan Wellness in Providence, Seychelles — massages, holistic rituals, skin care and body treatments. Connect to your inner self."
+  },
+
+  "brand": {
+    "name": "Nirvaan Wellness",
+    "tagline": "Providence, Seychelles",
+    "logo": "assets/logo.png"
+  },
+
+  "theme": {
+    "colors": {
+      "gold": "#b08100",
+      "goldDark": "#936100",
+      "goldLight": "#c19320",
+      "cream": "#fbf6f3",
+      "brownDark": "#4c2822",
+      "brownMid": "#705d2e",
+      "sage": "#699798",
+      "sageLight": "#b6c2c5",
+      "sageDark": "#4a5757",
+      "tan": "#b3a37a"
+    },
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Cormorant Garamond', serif"
+    }
+  },
+
+  "display": {
+    "showFullMenu": true,
+    "menuRedirectNote": "Explore our full collection of treatments, rituals and ceremonies — and book directly online."
+  },
+
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Philosophy", "href": "#philosophy" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Policies", "href": "#policies" },
+    { "label": "Visit Us", "href": "#contact" }
+  ],
+
+  "images": {
+    "hero": "assets/images/hero.jpg",
+    "philosophy": "assets/images/philosophy.jpg",
+    "services": "assets/images/services.jpg",
+    "contact": "assets/images/contact.jpg"
+  },
+
+  "hero": {
+    "heading": "Nirvaan Wellness",
+    "subheading": "Connect to Your Inner Self",
+    "intro": "A place to slow down, restore balance, and reconnect — in Providence, Seychelles."
+  },
+
+  "manifesto": {
+    "quote": "Self care is not a luxury; it is a vital practice that supports balance, resilience, and overall well-being."
+  },
+
+  "servicesSection": {
+    "heading": "The Virtues",
+    "intro": "A curated collection of rituals, treatments and ceremonies — each named after the virtue it cultivates within."
+  },
+
+  "booking": {
+    "channels": [
+      {
+        "id": "heygoldie",
+        "label": "Book Online",
+        "url": "https://book.heygoldie.com/Nirvaan-Wellness",
+        "enabled": true,
+        "primary": true
+      },
+      {
+        "id": "whatsapp",
+        "label": "WhatsApp",
+        "url": "https://wa.me/2482519733",
+        "enabled": true,
+        "primary": false
+      },
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com/nirvaan.wellness",
+        "enabled": true,
+        "primary": false
+      }
+    ]
+  },
+
+  "contact": {
+    "phone": "+248 2 519 733",
+    "whatsapp": "https://wa.me/2482519733",
+    "instagramHandle": "@nirvaan.wellness",
+    "instagramUrl": "https://instagram.com/nirvaan.wellness",
+    "location": "Providence, Seychelles",
+    "mapEmbedUrl": ""
+  },
+
+  "hours": [
+    { "days": "Monday – Thursday", "time": "8:30am – 4:00pm" },
+    { "days": "Friday", "time": "8:30am – 6:00pm" },
+    { "days": "Saturday (1x per month)", "time": "9:00am – 1:00pm" },
+    { "days": "Sunday & Public Holidays", "time": "Closed" }
+  ],
+
+  "philosophy": {
+    "heading": "Our Philosophy",
+    "paragraphs": [
+      "Self care is not a luxury; it is a vital practice that supports balance, resilience, and overall well-being..."
+    ]
+  },
+
+  "serviceCategories": [
+    {
+      "id": "virtues-massages",
+      "name": "Virtues Massages",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Aromatherapy",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 900" },
+            { "duration": "90 min", "price": "SCR 1200" }
+          ]
+        },
+        {
+          "name": "Deep Tissue",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 900" },
+            { "duration": "90 min", "price": "SCR 1200" }
+          ]
+        },
+        {
+          "name": "Anti-Cellulite",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 950" }
+          ]
+        },
+        {
+          "name": "Nirvaan Signature",
+          "description": "",
+          "variants": [
+            { "duration": "90 min", "price": "SCR 1300" }
+          ]
+        },
+        {
+          "name": "Back Massage",
+          "description": "",
+          "variants": [
+            { "duration": "30 min", "price": "SCR 500" }
+          ]
+        },
+        {
+          "name": "Head, Neck & Back",
+          "description": "",
+          "variants": [
+            { "duration": "40 min", "price": "SCR 650" }
+          ]
+        },
+        {
+          "name": "Thai",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 950" },
+            { "duration": "120 min", "price": "SCR 1450" }
+          ]
+        },
+        {
+          "name": "Thai Stretching",
+          "description": "",
+          "variants": [
+            { "duration": "30 min", "price": "SCR 550" }
+          ]
+        },
+        {
+          "name": "Aerial Flow Massage",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR TBC" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abundance",
+      "name": "Virtues Ritual — Abundance",
+      "subtitle": "Head Spa",
+      "note": "Includes a complimentary quick blow dry.",
+      "items": [
+        {
+          "name": "Relaxing Head Spa",
+          "description": "",
+          "variants": [
+            { "duration": "45 min", "price": "SCR 1050" }
+          ]
+        },
+        {
+          "name": "Purifying Head Spa",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 1500" }
+          ]
+        },
+        {
+          "name": "Nirvaan Holistic Head Spa",
+          "description": "",
+          "variants": [
+            { "duration": "90 min", "price": "SCR 1950" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grace",
+      "name": "Virtues Ritual — Grace",
+      "subtitle": "Skin Care",
+      "note": "Packages available on request.",
+      "items": [
+        {
+          "name": "Mini Cleansing",
+          "description": "",
+          "variants": [
+            { "duration": "40 min", "price": "SCR 675" }
+          ]
+        },
+        {
+          "name": "Deep Cleansing",
+          "description": "",
+          "variants": [
+            { "duration": "75 min", "price": "SCR 950" }
+          ]
+        },
+        {
+          "name": "Mapping",
+          "description": "",
+          "variants": [
+            { "duration": "75 min", "price": "SCR 1200" }
+          ]
+        },
+        {
+          "name": "Rejuvenation",
+          "description": "",
+          "variants": [
+            { "duration": "75 min", "price": "SCR 1800" }
+          ]
+        },
+        {
+          "name": "Hydrofacial",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 1200" }
+          ]
+        },
+        {
+          "name": "Nano-needling",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 1800" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "humility",
+      "name": "Virtues Ritual — Humility",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Ear Candling",
+          "description": "",
+          "variants": [
+            { "duration": "45 min", "price": "SCR 775" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gratitude",
+      "name": "Virtues Ritual — Gratitude",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Cocoon Self Love",
+          "description": "",
+          "variants": [
+            { "duration": "135 min", "price": "SCR 1750" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integrity",
+      "name": "Virtues Ritual — Integrity",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Detox",
+          "description": "",
+          "variants": [
+            { "duration": "180 min", "price": "SCR 1999" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "name": "Virtues Ritual — Acceptance",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Letting Glow",
+          "description": "",
+          "variants": [
+            { "duration": "180 min", "price": "SCR 1999" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balance",
+      "name": "Virtues Ritual — Balance",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Heaven's Feet Flow",
+          "description": "",
+          "variants": [
+            { "duration": "75 min", "price": "SCR 775" }
+          ]
+        },
+        {
+          "name": "Women's Ceremony",
+          "description": "",
+          "variants": [
+            { "duration": "135 min", "price": "SCR TBC" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-treatments",
+      "name": "Body Treatments",
+      "subtitle": "",
+      "note": "",
+      "items": [
+        {
+          "name": "Body Exfoliation",
+          "description": "",
+          "variants": [
+            { "duration": "45 min", "price": "SCR 750" }
+          ]
+        },
+        {
+          "name": "Body Wrap",
+          "description": "",
+          "variants": [
+            { "duration": "45 min", "price": "SCR 750" }
+          ]
+        },
+        {
+          "name": "Back Deep Cleansing",
+          "description": "",
+          "variants": [
+            { "duration": "45 min", "price": "SCR 650" }
+          ]
+        },
+        {
+          "name": "Honey Pot / Peach Bum",
+          "description": "",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 850" }
+          ]
+        },
+        {
+          "name": "Honey Pot with Waxing",
+          "description": "",
+          "variants": [
+            { "duration": "90 min", "price": "SCR 1100" }
+          ]
+        },
+        {
+          "name": "Thai Traditional Herbal Steam",
+          "description": "",
+          "variants": [
+            { "duration": "20 min", "price": "SCR 450" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waxing",
+      "name": "Waxing",
+      "subtitle": "",
+      "note": "",
+      "displayStyle": "compact",
+      "items": [
+        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
+        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
+        { "name": "Cheeks", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
+        { "name": "Chin", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
+        { "name": "Full Face", "description": "", "variants": [{ "duration": "", "price": "SCR 325" }] },
+        { "name": "Underarms", "description": "", "variants": [{ "duration": "", "price": "SCR 175" }] },
+        { "name": "Half Arms", "description": "", "variants": [{ "duration": "", "price": "SCR 225" }] },
+        { "name": "Full Arms", "description": "", "variants": [{ "duration": "", "price": "SCR 375" }] },
+        { "name": "Nipples", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
+        { "name": "Abdominal", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
+        { "name": "Half Legs", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
+        { "name": "Full Legs", "description": "", "variants": [{ "duration": "", "price": "SCR 475" }] },
+        { "name": "Lower Back", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
+        { "name": "Full Back", "description": "", "variants": [{ "duration": "", "price": "SCR 450" }] },
+        { "name": "Bikini Line", "description": "", "variants": [{ "duration": "", "price": "SCR 250" }] },
+        { "name": "Brazilian", "description": "", "variants": [{ "duration": "", "price": "SCR 425" }] },
+        { "name": "Hollywood", "description": "", "variants": [{ "duration": "", "price": "SCR 550" }] }
+      ]
+    },
+    {
+      "id": "threading",
+      "name": "Threading",
+      "subtitle": "",
+      "note": "",
+      "displayStyle": "compact",
+      "items": [
+        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
+        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
+        { "name": "Cheeks", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
+        { "name": "Chin", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
+        { "name": "Full Face", "description": "", "variants": [{ "duration": "", "price": "SCR 325" }] }
+      ]
+    }
+  ],
+
+  "policies": [
+    {
+      "heading": "Booking Policy",
+      "paragraphs": [
+        "To provide a personalised and seamless experience, we welcome guests by appointment only.",
+        "All treatments must be booked in advance — walk-ins are not accepted.",
+        "Appointments can be requested via Message or WhatsApp, or online through our booking link. Please note that all bookings are subject to confirmation by our admin team.",
+        "We kindly ask guests to arrive 15 minutes prior to their scheduled appointment to allow time for check-in, consultation, and preparation for the treatment.",
+        "Thank you for your cooperation — we look forward to welcoming you for a relaxing experience."
+      ]
+    },
+    {
+      "heading": "Late Cancellations & No-Shows",
+      "paragraphs": [
+        "To ensure the best experience for all our guests and therapists, we kindly ask you to respect our booking policy.",
+        "Late Cancellation: Appointments must be cancelled or rescheduled at least 48 hours prior to the scheduled time. Cancellations made within 48 hours will incur a 50% charge of the treatment price.",
+        "No-Show: Failure to attend an appointment without prior notice will result in a 100% charge of the treatment price.",
+        "Settlement of Fees: Any applicable cancellation or no-show fees must be fully settled before a new appointment can be booked.",
+        "We appreciate your understanding and cooperation, as this allows us to offer a seamless and respectful experience for all our guests."
+      ]
+    },
+    {
+      "heading": "Late Arrival Policy",
+      "paragraphs": [
+        "To ensure a smooth and relaxing experience for all our guests, we kindly ask that you arrive on time for your appointment.",
+        "If you arrive late, your treatment time may be shortened to respect subsequent bookings — the full treatment price will still apply.",
+        "Insufficient Time: If the remaining time is not sufficient to perform the scheduled treatment, the appointment will be considered a late cancellation and the applicable 50% fee will apply.",
+        "Thank you for your understanding and cooperation."
+      ]
+    }
+  ],
+
+  "footer": {
+    "text": "© 2026 Nirvaan Wellness. All rights reserved."
+  }
+}
