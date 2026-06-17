@@ -31,7 +31,16 @@
 
   "display": {
     "showFullMenu": true,
+    "serviceDisplay": "table",
     "menuRedirectNote": "Explore our full collection of treatments, rituals and ceremonies — and book directly online."
+  },
+
+  "fab": {
+    "enabled": true,
+    "channels": [
+      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/2482519733", "enabled": true },
+      { "id": "instagram", "label": "Instagram", "url": "https://instagram.com/nirvaan.wellness", "enabled": true }
+    ]
   },
 
   "nav": [
@@ -122,7 +131,7 @@
       "items": [
         {
           "name": "Aromatherapy",
-          "description": "",
+          "description": "Deeply immersive massage. Slow, flowing movements combined with warm aromatic essential oils.",
           "variants": [
             { "duration": "60 min", "price": "SCR 900" },
             { "duration": "90 min", "price": "SCR 1200" }
@@ -152,14 +161,14 @@
         },
         {
           "name": "Back Massage",
-          "description": "",
+          "description": "Skilled hands deliver rhythmic, targeted strokes across the back, releasing held tension.",
           "variants": [
             { "duration": "30 min", "price": "SCR 500" }
           ]
         },
         {
           "name": "Head, Neck & Back",
-          "description": "",
+          "description": "Targets head, neck, and back tension using skilled touch and calming techniques.",
           "variants": [
             { "duration": "40 min", "price": "SCR 650" }
           ]
@@ -167,6 +176,7 @@
         {
           "name": "Thai",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "60 min", "price": "SCR 950" },
             { "duration": "120 min", "price": "SCR 1450" }
@@ -174,7 +184,7 @@
         },
         {
           "name": "Thai Stretching",
-          "description": "",
+          "description": "Guided, practitioner-assisted Thai stretching weaving rhythmic movement, breath and targeted pressure.",
           "variants": [
             { "duration": "30 min", "price": "SCR 550" }
           ]
@@ -182,6 +192,7 @@
         {
           "name": "Aerial Flow Massage",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "60 min", "price": "SCR TBC" }
           ]
@@ -232,7 +243,7 @@
         },
         {
           "name": "Deep Cleansing",
-          "description": "",
+          "description": "Meticulous deep cleansing session that combines gentle exfoliation and pore-clearing extractions.",
           "variants": [
             { "duration": "75 min", "price": "SCR 950" }
           ]
@@ -241,7 +252,7 @@
           "name": "Mapping",
           "description": "",
           "variants": [
-            { "duration": "75 min", "price": "SCR 1200" }
+            { "duration": "75 min", "price": "SCR 1500" }
           ]
         },
         {
@@ -254,6 +265,7 @@
         {
           "name": "Hydrofacial",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "60 min", "price": "SCR 1200" }
           ]
@@ -261,6 +273,7 @@
         {
           "name": "Nano-needling",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "60 min", "price": "SCR 1800" }
           ]
@@ -276,6 +289,7 @@
         {
           "name": "Ear Candling",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "45 min", "price": "SCR 775" }
           ]
@@ -290,7 +304,7 @@
       "items": [
         {
           "name": "Cocoon Self Love",
-          "description": "",
+          "description": "Herbal steam followed by body exfoliation, hydrating wrap and cocooning swaddle.",
           "variants": [
             { "duration": "135 min", "price": "SCR 1750" }
           ]
@@ -305,7 +319,7 @@
       "items": [
         {
           "name": "Detox",
-          "description": "",
+          "description": "Rejuvenating ritual combining full body scrub, nutrient-rich wrap and restorative massage.",
           "variants": [
             { "duration": "180 min", "price": "SCR 1999" }
           ]
@@ -320,7 +334,7 @@
       "items": [
         {
           "name": "Letting Glow",
-          "description": "",
+          "description": "Immersive ritual combining invigorating body scrub, nourishing body wrap and soothing massage.",
           "variants": [
             { "duration": "180 min", "price": "SCR 1999" }
           ]
@@ -335,7 +349,7 @@
       "items": [
         {
           "name": "Heaven's Feet Flow",
-          "description": "",
+          "description": "Personalised, hands-on foot (nails care included) and leg treatment, created in two parts.",
           "variants": [
             { "duration": "75 min", "price": "SCR 775" }
           ]
@@ -343,6 +357,7 @@
         {
           "name": "Women's Ceremony",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "135 min", "price": "SCR TBC" }
           ]
@@ -357,14 +372,14 @@
       "items": [
         {
           "name": "Body Exfoliation",
-          "description": "",
+          "description": "Full-body exfoliation gently lifts dead skin and roughness, revealing smoother, renewed, radiant skin.",
           "variants": [
             { "duration": "45 min", "price": "SCR 750" }
           ]
         },
         {
           "name": "Body Wrap",
-          "description": "",
+          "description": "Serene full-body wrap envelops you in warm layers and hydrating serums.",
           "variants": [
             { "duration": "45 min", "price": "SCR 750" }
           ]
@@ -372,27 +387,35 @@
         {
           "name": "Back Deep Cleansing",
           "description": "",
+          "visible": false,
           "variants": [
             { "duration": "45 min", "price": "SCR 650" }
           ]
         },
         {
-          "name": "Honey Pot / Peach Bum",
-          "description": "",
+          "name": "Honey Pot",
+          "description": "Personalised intimate care combining delicate technique and attentive service. Women only.",
+          "variants": [
+            { "duration": "60 min", "price": "SCR 850" }
+          ]
+        },
+        {
+          "name": "Peach Bum",
+          "description": "Specialised comfort treatment for the posterior — attentive care and refined technique. Women only.",
           "variants": [
             { "duration": "60 min", "price": "SCR 850" }
           ]
         },
         {
           "name": "Honey Pot with Waxing",
-          "description": "",
+          "description": "Expert honey pot and waxing service — meticulous intimate and body hair removal in one session.",
           "variants": [
             { "duration": "90 min", "price": "SCR 1100" }
           ]
         },
         {
           "name": "Thai Traditional Herbal Steam",
-          "description": "",
+          "description": "Traditional Thai herbal steam ritual — aromatic steam and attentive care for deep relaxation.",
           "variants": [
             { "duration": "20 min", "price": "SCR 450" }
           ]
@@ -406,23 +429,23 @@
       "note": "",
       "displayStyle": "compact",
       "items": [
-        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
-        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
-        { "name": "Cheeks", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
-        { "name": "Chin", "description": "", "variants": [{ "duration": "", "price": "SCR 110" }] },
-        { "name": "Full Face", "description": "", "variants": [{ "duration": "", "price": "SCR 325" }] },
-        { "name": "Underarms", "description": "", "variants": [{ "duration": "", "price": "SCR 175" }] },
-        { "name": "Half Arms", "description": "", "variants": [{ "duration": "", "price": "SCR 225" }] },
-        { "name": "Full Arms", "description": "", "variants": [{ "duration": "", "price": "SCR 375" }] },
-        { "name": "Nipples", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
-        { "name": "Abdominal", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
-        { "name": "Half Legs", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
-        { "name": "Full Legs", "description": "", "variants": [{ "duration": "", "price": "SCR 475" }] },
-        { "name": "Lower Back", "description": "", "variants": [{ "duration": "", "price": "SCR 275" }] },
-        { "name": "Full Back", "description": "", "variants": [{ "duration": "", "price": "SCR 450" }] },
-        { "name": "Bikini Line", "description": "", "variants": [{ "duration": "", "price": "SCR 250" }] },
-        { "name": "Brazilian", "description": "", "variants": [{ "duration": "", "price": "SCR 425" }] },
-        { "name": "Hollywood", "description": "", "variants": [{ "duration": "", "price": "SCR 550" }] }
+        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "30 min", "price": "SCR 110" }] },
+        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 110" }] },
+        { "name": "Cheeks", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 110" }] },
+        { "name": "Chin", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 110" }] },
+        { "name": "Full Face", "description": "", "variants": [{ "duration": "45 min", "price": "SCR 325" }] },
+        { "name": "Underarms", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 175" }] },
+        { "name": "Half Arms", "description": "", "variants": [{ "duration": "30 min", "price": "SCR 225" }] },
+        { "name": "Full Arms", "description": "", "variants": [{ "duration": "40 min", "price": "SCR 375" }] },
+        { "name": "Nipples", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 100" }] },
+        { "name": "Abdominal", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 275" }] },
+        { "name": "Half Legs", "description": "", "variants": [{ "duration": "30 min", "price": "SCR 275" }] },
+        { "name": "Full Legs", "description": "", "variants": [{ "duration": "45 min", "price": "SCR 475" }] },
+        { "name": "Lower Back", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 275" }] },
+        { "name": "Full Back", "description": "", "variants": [{ "duration": "30 min", "price": "SCR 450" }] },
+        { "name": "Bikini Line", "description": "Targeted hair removal of the bikini line area, removing unwanted hair and shaping.", "variants": [{ "duration": "20 min", "price": "SCR 250" }] },
+        { "name": "Brazilian", "description": "Precision Brazilian waxing that removes hair from the front, back and bikini line.", "variants": [{ "duration": "40 min", "price": "SCR 425" }] },
+        { "name": "Hollywood", "description": "Complete, integral bikini-area hair removal for clients seeking total intimate grooming.", "variants": [{ "duration": "45 min", "price": "SCR 550" }] }
       ]
     },
     {
@@ -432,11 +455,13 @@
       "note": "",
       "displayStyle": "compact",
       "items": [
-        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
-        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
-        { "name": "Cheeks", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
-        { "name": "Chin", "description": "", "variants": [{ "duration": "", "price": "SCR 100" }] },
-        { "name": "Full Face", "description": "", "variants": [{ "duration": "", "price": "SCR 325" }] }
+        { "name": "Eyebrows", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 100" }] },
+        { "name": "Upper Lip", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 100" }] },
+        { "name": "Cheeks", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 100" }] },
+        { "name": "Chin", "description": "", "variants": [{ "duration": "10 min", "price": "SCR 100" }] },
+        { "name": "Full Face", "description": "", "variants": [{ "duration": "15 min", "price": "SCR 325" }] },
+        { "name": "Underarms", "description": "", "variants": [{ "duration": "20 min", "price": "SCR 175" }] },
+        { "name": "Abdominal", "description": "", "variants": [{ "duration": "30 min", "price": "SCR 275" }] }
       ]
     }
   ],
