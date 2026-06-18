@@ -3,116 +3,349 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nirvaan Wellness</title>
-  <meta name="description" content="Nirvaan Wellness — Connect to Your Inner Self. Massages, holistic rituals, skin care and body treatments in Providence, Seychelles." />
-  <meta name="author" content="Upper Deck Studio" />
+  <title>Nirvaan Wellness — Design Review</title>
   <meta name="robots" content="noindex, nofollow" />
-  <!-- Designed & built by Upper Deck Studio · A388 -->
-  <!-- Mock preview — not for public indexing -->
-  <link rel="icon" href="assets/logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:       #b08100;
+      --gold-light: #c19320;
+      --cream:      #fbf6f3;
+      --parchment:  #f0e3c2;
+      --brown-dark: #4c2822;
+      --brown-mid:  #705d2e;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--cream);
+      color: var(--brown-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 24px 4rem;
+    }
+
+    .wordmark {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--brown-dark);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .rule {
+      width: 44px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.2rem auto 1.2rem;
+    }
+
+    .intro-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 400;
+      text-align: center;
+      color: var(--brown-dark);
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--brown-mid);
+      text-align: center;
+      max-width: 440px;
+      line-height: 1.65;
+      margin-bottom: 4rem;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 840px;
+    }
+
+    .option-card {
+      border: 1px solid rgba(176, 129, 0, 0.2);
+      background: #fff;
+      padding: 2.5rem 2rem 2.2rem;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      position: relative;
+    }
+
+    .option-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 6px 32px rgba(176, 129, 0, 0.1);
+    }
+
+    .option-badge {
+      font-size: 0.58rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .option-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      font-weight: 400;
+      color: var(--gold);
+      opacity: 0.22;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .option-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+      font-weight: 500;
+      color: var(--brown-dark);
+      margin-bottom: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .option-desc {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--brown-mid);
+      line-height: 1.65;
+      margin-bottom: 1.8rem;
+      flex: 1;
+    }
+
+    .option-preview {
+      width: 100%;
+      border: 1px solid rgba(176, 129, 0, 0.15);
+      margin-bottom: 1.8rem;
+      overflow: hidden;
+      background: var(--cream);
+    }
+
+    /* Mini table preview */
+    .preview-table {
+      width: 100%;
+      border-collapse: collapse;
+      padding: 1rem 1.2rem;
+      display: block;
+    }
+
+    .preview-table-inner {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .preview-table-inner tr { border-bottom: 1px solid rgba(176,129,0,0.12); }
+    .preview-table-inner tr:last-child { border-bottom: none; }
+
+    .preview-table-inner td {
+      padding: 0.45rem 0;
+      font-size: 0.72rem;
+      color: var(--brown-dark);
+    }
+
+    .preview-table-inner .p-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding-right: 1rem;
+    }
+
+    .preview-table-inner .p-desc {
+      display: block;
+      font-style: italic;
+      font-size: 0.62rem;
+      color: #699798;
+      margin-top: 0.1rem;
+    }
+
+    .preview-table-inner .p-dur {
+      font-style: italic;
+      font-size: 0.6rem;
+      color: #699798;
+      white-space: nowrap;
+      padding-right: 0.75rem;
+    }
+
+    .preview-table-inner .p-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.7rem;
+      color: var(--gold);
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    /* Mini cards preview */
+    .preview-cards {
+      padding: 0.85rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .preview-card {
+      border: 1px solid rgba(176,129,0,0.15);
+      background: rgba(255,255,255,0.7);
+      padding: 0.65rem 0.6rem;
+    }
+
+    .preview-card .pc-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--brown-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    .preview-card .pc-price {
+      font-size: 0.6rem;
+      color: var(--gold);
+    }
+
+    .preview-card .pc-desc {
+      font-style: italic;
+      font-size: 0.58rem;
+      color: #699798;
+      margin-top: 0.25rem;
+      line-height: 1.4;
+    }
+
+    .option-cta {
+      display: inline-block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: var(--gold);
+      padding: 0.75em 2em;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+    }
+
+    .option-cta:hover { background: #936100; }
+
+    .footer-note {
+      margin-top: 4rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: rgba(76, 40, 34, 0.3);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 3.5rem 20px 3rem; }
+      .options { grid-template-columns: 1fr; max-width: 420px; }
+      .subtitle { margin-bottom: 2.8rem; }
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header" id="site-header">
-    <a href="#home" class="brand">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="brand-logo" />
-    </a>
-    <nav class="main-nav" id="main-nav">
-      <ul id="nav-links"></ul>
-    </nav>
-    <div class="header-right">
-      <a href="#" class="header-cta" id="header-cta" target="_blank" rel="noopener">Book a Treatment</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <p class="wordmark">Nirvaan Wellness</p>
+  <div class="rule"></div>
+  <p class="intro-label">Website Design Review</p>
+  <h1>Two Directions</h1>
+  <p class="subtitle">Both share the same content and brand. Choose a layout to preview the full site.</p>
 
-  <section class="hero" id="home">
-    <div class="hero-bg" id="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="hero-logo" />
-      <div class="hero-rule"></div>
-      <p class="hero-tagline" id="hero-tagline"></p>
-      <a href="#" class="btn-hero" id="hero-cta" target="_blank" rel="noopener">Book a Treatment</a>
-      <p class="hero-secondary" id="hero-secondary"></p>
-    </div>
-  </section>
+  <div class="options">
 
-  <section class="manifesto" id="manifesto">
-    <div class="manifesto-rule"></div>
-    <blockquote class="manifesto-quote" id="manifesto-quote"></blockquote>
-    <div class="manifesto-rule"></div>
-  </section>
-
-  <section class="philosophy" id="philosophy">
-    <div class="container">
-      <p class="section-label">Philosophy</p>
-      <h2 id="philosophy-heading"></h2>
-    </div>
-    <div class="philosophy-image">
-      <img id="philosophy-img" src="" alt="Meditation at sunrise" loading="lazy" />
-    </div>
-    <div class="container">
-      <div class="philosophy-text" id="philosophy-paragraphs"></div>
-    </div>
-  </section>
-
-  <section class="virtues-intro" id="virtues">
-    <div class="container">
-      <p class="section-label">Our Services</p>
-      <h2 class="virtues-heading" id="virtues-heading"></h2>
-      <p class="virtues-intro-text" id="virtues-intro-text"></p>
-      <nav class="chapter-nav" id="chapter-nav"></nav>
-    </div>
-  </section>
-
-  <div id="service-chapters"></div>
-
-  <section class="policies" id="policies">
-    <div class="container">
-      <p class="section-label">Good to Know</p>
-      <h2>Good to Know</h2>
-      <div class="policies-grid" id="policies-list"></div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="contact-bg" id="contact-bg"></div>
-    <div class="contact-overlay"></div>
-    <div class="container contact-inner">
-      <p class="section-label section-label--light">Visit Us</p>
-      <h2 class="contact-heading">Visit Us</h2>
-      <div class="contact-grid">
-        <div class="contact-col">
-          <h3>Opening Hours</h3>
-          <table class="hours-table" id="hours-table"></table>
-        </div>
-        <div class="contact-col">
-          <h3>Get in Touch</h3>
-          <ul class="contact-details" id="contact-details"></ul>
-          <div class="contact-actions" id="contact-actions"></div>
+    <a href="table/" class="option-card">
+      <p class="option-badge">Layout A</p>
+      <p class="option-letter">A</p>
+      <p class="option-name">Luxury Menu</p>
+      <p class="option-desc">Services as a refined price list — name, duration, brief description and price. Minimal. Editorial.</p>
+      <div class="option-preview">
+        <div class="preview-table" style="padding: 0.9rem 1.1rem;">
+          <table class="preview-table-inner">
+            <tr>
+              <td class="p-name">Aromatherapy<span class="p-desc">Deeply immersive massage with warm aromatic oils.</span></td>
+              <td class="p-dur">60 min</td>
+              <td class="p-price">SCR 900</td>
+            </tr>
+            <tr>
+              <td class="p-name">Back Massage<span class="p-desc">Rhythmic strokes releasing held tension.</span></td>
+              <td class="p-dur">30 min</td>
+              <td class="p-price">SCR 500</td>
+            </tr>
+            <tr>
+              <td class="p-name">Letting Glow<span class="p-desc">Scrub, wrap and soothing massage.</span></td>
+              <td class="p-dur">180 min</td>
+              <td class="p-price">SCR 1999</td>
+            </tr>
+          </table>
         </div>
       </div>
-    </div>
-  </section>
+      <span class="option-cta">Preview Layout A</span>
+    </a>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="footer-logo" loading="lazy" />
-      <div class="footer-rule"></div>
-      <p id="footer-text"></p>
-    </div>
-  </footer>
+    <a href="cards/" class="option-card">
+      <p class="option-badge">Layout B</p>
+      <p class="option-letter">B</p>
+      <p class="option-name">Service Cards</p>
+      <p class="option-desc">Each treatment as a card — name, duration, price and description side by side. Browsable. Warm.</p>
+      <div class="option-preview">
+        <div class="preview-cards">
+          <div class="preview-card">
+            <p class="pc-name">Aromatherapy</p>
+            <p class="pc-price">60 min · SCR 900</p>
+            <p class="pc-desc">Deeply immersive massage with warm aromatic oils.</p>
+          </div>
+          <div class="preview-card">
+            <p class="pc-name">Back Massage</p>
+            <p class="pc-price">30 min · SCR 500</p>
+            <p class="pc-desc">Rhythmic strokes releasing held tension.</p>
+          </div>
+          <div class="preview-card">
+            <p class="pc-name">Letting Glow</p>
+            <p class="pc-price">180 min · SCR 1999</p>
+            <p class="pc-desc">Scrub, wrap and soothing massage ritual.</p>
+          </div>
+          <div class="preview-card">
+            <p class="pc-name">Heaven's Feet</p>
+            <p class="pc-price">75 min · SCR 775</p>
+            <p class="pc-desc">Personalised foot and leg treatment.</p>
+          </div>
+        </div>
+      </div>
+      <span class="option-cta">Preview Layout B</span>
+    </a>
 
-  <div class="fab" id="fab"></div>
+  </div>
 
-  <script src="app.js"></script>
+  <p class="footer-note">Nirvaan Wellness · Internal design review · Not for public circulation</p>
+
 </body>
 </html>
