@@ -390,8 +390,7 @@
         ${channels.map(c => `
           <a href="${c.url}" target="_blank" rel="noopener"
              class="fab-action fab-${c.id}" aria-label="${c.label}">
-            <span class="fab-action-label">${c.label}</span>
-            <span class="fab-action-icon">${FAB_ICONS[c.id] || ''}</span>
+            ${FAB_ICONS[c.id] || ''}
           </a>`).join('')}
       </div>
       <button class="fab-toggle" id="fab-toggle"

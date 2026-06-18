@@ -950,28 +950,8 @@ h2 {
   transform: translateY(0);
 }
 
-/* Speed-dial action: label chip on the left + coloured icon circle on the right */
+/* Speed-dial actions — icon-only circles */
 .fab-action {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.fab-action-label {
-  background: rgba(255, 255, 255, 0.96);
-  color: var(--color-brown-dark);
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  padding: 0.38em 0.85em;
-  white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
-}
-
-.fab-action-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -979,14 +959,15 @@ h2 {
   align-items: center;
   justify-content: center;
   color: #fff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.22);
+  transition: transform 0.15s, box-shadow 0.15s;
   flex-shrink: 0;
-  transition: transform 0.15s;
 }
 
-.fab-action:hover .fab-action-icon { transform: scale(1.07); }
+.fab-action:hover { transform: scale(1.08); box-shadow: 0 4px 16px rgba(0,0,0,0.28); }
 
-.fab-whatsapp .fab-action-icon { background: #25D366; }
-.fab-instagram .fab-action-icon {
+.fab-whatsapp { background: #25D366; }
+.fab-instagram {
   background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }

@@ -190,8 +190,8 @@
           ]
         },
         {
-          "name": "Aerial Flow Massage",
-          "description": "",
+          "name": "Fly Massage",
+          "description": "A hammock suspended above the massage table supports the body in unique positions — enabling deeper stretching, fascial release and full relaxation. Technique developed in Italy.",
           "visible": false,
           "variants": [
             { "duration": "60 min", "price": "SCR TBC" }
@@ -356,10 +356,26 @@
         },
         {
           "name": "Women's Ceremony",
-          "description": "",
+          "description": "A two-hour ritual for women — yoni steam, massage and womb-focused care, cultivating deep comfort and wellbeing.",
           "visible": false,
           "variants": [
             { "duration": "135 min", "price": "SCR TBC" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sound",
+      "name": "Sound & Movement",
+      "subtitle": "In collaboration with Sound Journey",
+      "note": "Sound bath sessions are offered in collaboration with Rose May of Sound Journey.",
+      "items": [
+        {
+          "name": "Sound Bath & Massage",
+          "description": "Sound bowl therapy and massage in one session — vibrational sound to calm the nervous system, followed by personalised bodywork.",
+          "visible": false,
+          "variants": [
+            { "duration": "TBC", "price": "SCR TBC" }
           ]
         }
       ]
