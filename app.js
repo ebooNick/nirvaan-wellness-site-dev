@@ -5,7 +5,18 @@
 (async function () {
   const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
 
+  // Set by each layout's index.html: window.NIRVAAN_LAYOUT and window.NIRVAAN_BASE
+  const LAYOUT = window.NIRVAAN_LAYOUT || 'table';
+  const BASE   = window.NIRVAAN_BASE   || '';
+
   const FAB_ICONS = {
+    heygoldie: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <line x1="16" y1="2" x2="16" y2="6"/>
+      <line x1="8" y1="2" x2="8" y2="6"/>
+      <line x1="3" y1="10" x2="21" y2="10"/>
+    </svg>`,
     whatsapp: `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.43 1.27 4.88L2 22l5.25-1.26A9.944 9.944 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.08 13.6c-.21.6-1.22 1.14-1.68 1.21-.43.06-.97.09-1.57-.1-.36-.12-.82-.27-1.41-.53-2.48-1.07-4.1-3.56-4.22-3.73-.12-.17-1-1.33-1-2.54 0-1.21.63-1.8.86-2.05.21-.23.46-.29.62-.29.16 0 .31 0 .45.01.14.01.34-.05.53.41.2.47.68 1.66.74 1.78.06.12.1.27.02.43-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.24-.1.47.14.23.62.99 1.33 1.6.91.81 1.68 1.06 1.91 1.18.23.12.37.1.51-.06.14-.16.59-.69.75-.92.16-.23.32-.19.54-.11.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.57-.15 1.17z"/>
     </svg>`,
@@ -14,7 +25,7 @@
     </svg>`,
   };
 
-  const data = await fetch('content.json').then(r => r.json());
+  const data = await fetch(window.NIRVAAN_CONTENT || 'content.json').then(r => r.json());
 
   applyTheme(data.theme);
   document.title = data.meta.siteTitle;
@@ -28,8 +39,7 @@
   renderVirtuesIntro(data.servicesSection);
 
   if (data.display?.showFullMenu !== false) {
-    const mode = data.display?.serviceDisplay || 'table';
-    if (mode === 'cards') {
+    if (LAYOUT === 'cards') {
       renderServiceCards(data.serviceCategories);
     } else {
       renderServiceChapters(data.serviceCategories);
@@ -366,13 +376,13 @@
   function setBg(id, url) {
     if (!url) return;
     const el = document.getElementById(id);
-    if (el) el.style.backgroundImage = `url('${url}')`;
+    if (el) el.style.backgroundImage = `url('${BASE}${url}')`;
   }
 
   function setImg(id, url) {
     if (!url) return;
     const el = document.getElementById(id);
-    if (el) el.src = url;
+    if (el) el.src = `${BASE}${url}`;
   }
 
   // ── FAB (floating action button) ─────────────────────────────

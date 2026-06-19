@@ -29,7 +29,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
   font-family: var(--font-body);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   line-height: 1.75;
   color: var(--color-brown-dark);
   background: var(--color-cream);
@@ -433,7 +433,7 @@ h2 {
 
 .chapter-note {
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--color-sage-dark);
   text-align: center;
   margin-bottom: 2rem;
@@ -601,7 +601,7 @@ h2 {
 }
 
 .policy-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: rgba(251, 246, 243, 0.72);
   margin-bottom: 0.75rem;
@@ -655,11 +655,11 @@ h2 {
 .hours-table { width: 100%; border-collapse: collapse; }
 .hours-table tr { border-bottom: 1px solid rgba(251,246,243,0.1); }
 .hours-table tr:last-child { border-bottom: none; }
-.hours-table td { padding: 0.55rem 0; font-size: 1rem; color: rgba(251,246,243,0.78); }
+.hours-table td { padding: 0.55rem 0; font-size: 1.1rem; color: rgba(251,246,243,0.78); }
 .hours-table td:last-child { text-align: right; color: var(--color-gold-light); }
 
 .contact-details { list-style: none; margin-bottom: 2rem; }
-.contact-details li { padding: 0.4rem 0; font-size: 1rem; color: rgba(251,246,243,0.78); }
+.contact-details li { padding: 0.4rem 0; font-size: 1.1rem; color: rgba(251,246,243,0.78); }
 .contact-details .label { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--color-gold-light); display: block; margin-bottom: 0.15em; }
 .contact-details a { color: rgba(251,246,243,0.85); }
 .contact-details a:hover { color: var(--color-cream); }
@@ -899,18 +899,23 @@ h2 {
 }
 
 /* ==========================================================================
-   FAB — floating action button (speed-dial)
+   FAB — floating action button (speed-dial, mobile only)
    ========================================================================== */
 
+/* Mobile-only: hidden by default, shown below 720px */
 .fab {
   position: fixed;
   bottom: 2rem;
   right: 1.5rem;
   z-index: 300;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   gap: 0.65rem;
+}
+
+@media (max-width: 720px) {
+  .fab { display: flex; }
 }
 
 .fab-toggle {
@@ -967,7 +972,8 @@ h2 {
 
 .fab-action:hover { transform: scale(1.08); box-shadow: 0 4px 16px rgba(0,0,0,0.28); }
 
-.fab-whatsapp { background: #25D366; }
+.fab-heygoldie { background: var(--color-gold); }
+.fab-whatsapp  { background: #25D366; }
 .fab-instagram {
   background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }

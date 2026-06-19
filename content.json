@@ -38,8 +38,9 @@
   "fab": {
     "enabled": true,
     "channels": [
-      { "id": "whatsapp", "label": "WhatsApp", "url": "https://wa.me/2482519733", "enabled": true },
-      { "id": "instagram", "label": "Instagram", "url": "https://instagram.com/nirvaan.wellness", "enabled": true }
+      { "id": "heygoldie", "label": "Book Online", "url": "https://book.heygoldie.com/Nirvaan-Wellness", "enabled": true },
+      { "id": "whatsapp",  "label": "WhatsApp",    "url": "https://wa.me/2482519733",                    "enabled": true },
+      { "id": "instagram", "label": "Instagram",   "url": "https://instagram.com/nirvaan.wellness",      "enabled": true }
     ]
   },
 

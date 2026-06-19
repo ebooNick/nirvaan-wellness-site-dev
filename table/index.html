@@ -8,18 +8,17 @@
   <meta name="author" content="Upper Deck Studio" />
   <meta name="robots" content="noindex, nofollow" />
   <!-- Designed & built by Upper Deck Studio · A388 -->
-  <!-- Mock preview — not for public indexing -->
-  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
 
   <header class="site-header" id="site-header">
     <a href="#home" class="brand">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="brand-logo" />
+      <img src="../assets/logo.png" alt="Nirvaan Wellness" class="brand-logo" />
     </a>
     <nav class="main-nav" id="main-nav">
       <ul id="nav-links"></ul>
@@ -37,7 +36,7 @@
     <div class="hero-bg" id="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="hero-logo" />
+      <img src="../assets/logo.png" alt="Nirvaan Wellness" class="hero-logo" />
       <div class="hero-rule"></div>
       <p class="hero-tagline" id="hero-tagline"></p>
       <a href="#" class="btn-hero" id="hero-cta" target="_blank" rel="noopener">Book a Treatment</a>
@@ -105,7 +104,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img src="assets/logo.png" alt="Nirvaan Wellness" class="footer-logo" loading="lazy" />
+      <img src="../assets/logo.png" alt="Nirvaan Wellness" class="footer-logo" loading="lazy" />
       <div class="footer-rule"></div>
       <p id="footer-text"></p>
     </div>
@@ -113,6 +112,11 @@
 
   <div class="fab" id="fab"></div>
 
-  <script src="app.js"></script>
+  <script>
+    window.NIRVAAN_LAYOUT  = 'table';
+    window.NIRVAAN_CONTENT = '../content.json';
+    window.NIRVAAN_BASE    = '../';
+  </script>
+  <script src="../app.js"></script>
 </body>
 </html>
